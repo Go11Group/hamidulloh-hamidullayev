@@ -1,0 +1,55 @@
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git config --global user.email "xamidulloxxamidullayev592"
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git config --global user.name "xamidullox"
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commint -m
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commint -m "Qoshdim"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Qoshdim"
+[master (root-commit) 787bff9] Qoshdim
+ 1 file changed, 7 insertions(+)
+ create mode 100644 main.go
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch xususiyat-1
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch xususiyat-2
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout xususiyat-1
+Switched to branch 'xususiyat-1'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add fayl.txt
+fatal: pathspec 'fayl.txt' did not match any files
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add .
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Ozgarish"
+[xususiyat-1 2fcffdf] Ozgarish
+ 1 file changed, 4 insertions(+)
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout xususiyat-2
+Switched to branch 'xususiyat-2'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add .
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Ozgarish 2"
+[xususiyat-2 5cc3645] Ozgarish 2
+ 1 file changed, 7 insertions(+)
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch
+  master
+  xususiyat-1
+* xususiyat-2
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout master
+Switched to branch 'master'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge xususiyat-1
+Updating 787bff9..2fcffdf
+Fast-forward
+ main.go | 4 ++++
+ 1 file changed, 4 insertions(+)
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge xususiyat-2
+Auto-merging main.go
+Merge made by the 'ort' strategy.
+ main.go | 7 +++++++
+ 1 file changed, 7 insertions(+)
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch -d xususiyat-1\ 
+error: branch 'xususiyat-1 ' not found.
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch -d xususiyat-1
+Deleted branch xususiyat-1 (was 2fcffdf).
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch -d xususiyat-2
+Deleted branch xususiyat-2 (was 5cc3645).
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ 

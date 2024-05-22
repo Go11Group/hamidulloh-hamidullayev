@@ -1,0 +1,51 @@
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch feature
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout feature
+Switched to branch 'feature'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add .
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Ozgarish Feature"
+[feature 884ce56] Ozgarish Feature
+ 2 files changed, 59 insertions(+)
+ create mode 100644 vz.txt
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout master
+Switched to branch 'master'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge feature
+Updating 7e11c7f..884ce56
+Fast-forward
+ main.go |  4 ++++
+ vz.txt  | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+ create mode 100644 vz.txt
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch f
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch f1
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout f
+Switched to branch 'f'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add .
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Ozgarish f"
+[f 9d4105e] Ozgarish f
+ 3 files changed, 72 insertions(+), 8 deletions(-)
+ create mode 100644 vz1.txt
+ create mode 100644 vz2.txt
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git branch f1
+fatal: A branch named 'f1' already exists.
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout f1
+Switched to branch 'f1'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git add .
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git commit -m "Ozgarish f1"
+[f1 311a446] Ozgarish f1
+ 1 file changed, 8 deletions(-)
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git checkout master
+Switched to branch 'master'
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge f
+Updating 884ce56..9d4105e
+Fast-forward
+ main.go |  8 --------
+ vz1.txt | 17 +++++++++++++++++
+ vz2.txt | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 72 insertions(+), 8 deletions(-)
+ create mode 100644 vz1.txt
+ create mode 100644 vz2.txt
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge f1
+Merge made by the 'ort' strategy.
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ git merge f1
+Already up to date.
+xamidullayev@xamidullayev-ROG-Strix-G513RC-G513RC:~/Documents/dodi$ 
