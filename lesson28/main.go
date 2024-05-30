@@ -44,13 +44,13 @@ func main() {
 	
 	for{
 		fmt.Println("What do you want to do?")
-		fmt.Print(`[1]-> add course
-[2]-> show all cocurse
+		fmt.Print(`[1]-> kurs qo'shing
+[2]-> barcha kurslarni ko'rsatish
 [3]-> get by id
 [4]-> update course
 [5]-> delete course
-[6]-> add student
-[7]-> show all students
+[6]-> student Qoshish
+[7]-> students tebilini korsatish
 [8]-> get by id student
 [9]-> update student
 [10]-> delete student
@@ -139,7 +139,7 @@ func main() {
 			fmt.Println("Add student")
 			fmt.Println()
 
-			student := model.User{}
+			student := model.Student{}
 			fmt.Print("Enter name : ")
 			fmt.Scan(&student.Name)
 
@@ -188,7 +188,7 @@ func main() {
 		case 9:
 			fmt.Println("Update student")
 
-			student :=  model.User{}
+			student :=  model.Student{}
 
 			fmt.Print("Enter student id  which you want update : ")
 			fmt.Scan(&student.ID)
