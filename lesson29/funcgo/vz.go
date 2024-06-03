@@ -26,6 +26,7 @@ func (db *dbUser) Update1(user modul.User, id string) error {
 	result := db.DB.Model(&modul.User{}).Where("id = ?", id).Updates(user)
 	return result.Error
 }
+
 func (db *dbUser) FindByID(id string, a int) (*modul.User, error) {
 	switch a {
 	case 1:
@@ -56,6 +57,7 @@ func (db *dbUser) FindByID(id string, a int) (*modul.User, error) {
 
 	return nil,fmt.Errorf("sizqidirgan narsa chiqmadi")
 }
+
 
 func NewDBUser() (*dbUser, error) {
 	db, err := gorm.Open(postgres.Open("postgres://postgres:dodi@localhost:5432/dodi?sslmode=disable"))
