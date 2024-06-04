@@ -10,6 +10,11 @@ create unique index product_2 on dodi (address, phoneNumber);
 
 create unique index product_2 on dodi (password, name);
 
+create index persons_indx on dodi using hash (id);
+
+create index persons_indx on dodi using hash (address, phoneNumber);
+
+create index persons_indx on dodi using hash ( name, surname, email);
 
 explain (analyse )
 select * from dodi where surname = 'TCwdSEX@ubwUhXM.net' and name  = 'Forrest' and email = 'TCwdSEX@ubwUhXM.net';
