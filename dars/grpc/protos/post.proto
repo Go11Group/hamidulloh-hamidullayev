@@ -1,0 +1,27 @@
+syntax="proto3";
+
+package user;
+
+option go_package = "/user";
+
+
+service PostService{
+    rpc CreatePost(PostReq) returns(Post);
+    rpc GetById(PId) returns(Post);
+}
+
+message PostReq{
+    string name = 1;
+    int32 age = 2;
+}
+
+message Post{
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+}
+
+message PId{
+    int32 id = 1;
+}
+

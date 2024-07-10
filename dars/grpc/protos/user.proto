@@ -1,0 +1,26 @@
+syntax="proto3";
+
+package user;
+
+option go_package = "/user";
+
+service UserService{
+    rpc CreateUser(UserReq) returns(User);
+    rpc GetById(Id) returns(User);
+}
+
+message UserReq{
+    string name = 1;
+    int32 age = 2;
+}
+
+message User{
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+}
+
+message Id{
+    int32 id = 1;
+}
+

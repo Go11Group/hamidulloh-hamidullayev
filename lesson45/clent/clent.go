@@ -24,7 +24,6 @@ func main() {
 
     ctx := context.Background()
 
-    // Ko'p kitoblarni qo'shish
     books := []pb.AddBookRequest{
         {Title: "Alpomish", Author: "Abdulla Qodiriy", YearPublished: 1923},
         {Title: "O'tgan kunlar", Author: "Abdulla Qodiriy", YearPublished: 1926},
@@ -50,7 +49,6 @@ func main() {
         }
     }
 
-    // Limitni olish
     limit := len(bookIDs)
     if len(os.Args) > 1 {
         userLimit, err := strconv.Atoi(os.Args[1])
@@ -59,7 +57,6 @@ func main() {
         }
     }
 
-    // Tasodifiy kitoblarni tanlash
     rand.Seed(time.Now().Unix())
     selectedBookIDs := make([]string, 0, limit)
     selectedIndices := rand.Perm(len(bookIDs))[:limit]
@@ -67,7 +64,6 @@ func main() {
         selectedBookIDs = append(selectedBookIDs, bookIDs[idx])
     }
 
-    // Tanlangan kitoblarni ko'rsatish
     log.Println("Selected Books:")
     for i, bookID := range selectedBookIDs {
 		for j, v := range books {
@@ -78,7 +74,6 @@ func main() {
         
     }
 
-    // Tanlangan bir kitobni ijaraga olish
     selectedBookID := selectedBookIDs[rand.Intn(len(selectedBookIDs))]
     borrowBookResponse, err := c.BorrowBook(ctx, &pb.BorrowBookRequest{
         BookId: selectedBookID,
